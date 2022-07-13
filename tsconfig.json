@@ -14,6 +14,24 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "punch-search-widget": [
+        "dist/punch-search-widget/punch-search-widget",
+        "dist/punch-search-widget"
+      ],
+      "punch-stats-widget": [
+        "dist/punch-stats-widget/punch-stats-widget",
+        "dist/punch-stats-widget"
+      ],
+      "punch-widget": [
+        "dist/punch-widget/punch-widget",
+        "dist/punch-widget"
+      ],
+      "todays-punch-activity-widget": [
+        "dist/todays-punch-activity-widget/todays-punch-activity-widget",
+        "dist/todays-punch-activity-widget"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [

@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Objective 
+- Create Time Micro Framework Widgets
+  x Create punch widget
+  x Create punch stats widget
+  x Create daily punch activity widget
+  - Create Punch Search widget
+  
+***** Need the ability to compile library scss and put a css file in the dist folder *****

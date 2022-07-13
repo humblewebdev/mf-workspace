@@ -3,5 +3,130 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "punch-widget": {
+      "projectType": "library",
+      "root": "projects/punch-widget",
+      "sourceRoot": "projects/punch-widget/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/punch-widget/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/punch-widget/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/punch-widget/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/punch-widget/src/test.ts",
+            "tsConfig": "projects/punch-widget/tsconfig.spec.json",
+            "karmaConfig": "projects/punch-widget/karma.conf.js"
+          }
+        }
+      }
+    },
+    "punch-stats-widget": {
+      "projectType": "library",
+      "root": "projects/punch-stats-widget",
+      "sourceRoot": "projects/punch-stats-widget/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/punch-stats-widget/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/punch-stats-widget/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/punch-stats-widget/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/punch-stats-widget/src/test.ts",
+            "tsConfig": "projects/punch-stats-widget/tsconfig.spec.json",
+            "karmaConfig": "projects/punch-stats-widget/karma.conf.js"
+          }
+        }
+      }
+    },
+    "daily-punch-activity-widget": {
+      "projectType": "library",
+      "root": "projects/daily-punch-activity-widget",
+      "sourceRoot": "projects/daily-punch-activity-widget/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/daily-punch-activity-widget/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/daily-punch-activity-widget/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/daily-punch-activity-widget/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/daily-punch-activity-widget/src/test.ts",
+            "tsConfig": "projects/daily-punch-activity-widget/tsconfig.spec.json",
+            "karmaConfig": "projects/daily-punch-activity-widget/karma.conf.js"
+          }
+        }
+      }
+    },
+    "punch-search-widget": {
+      "projectType": "library",
+      "root": "projects/punch-search-widget",
+      "sourceRoot": "projects/punch-search-widget/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/punch-search-widget/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/punch-search-widget/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/punch-search-widget/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/punch-search-widget/src/test.ts",
+            "tsConfig": "projects/punch-search-widget/tsconfig.spec.json",
+            "karmaConfig": "projects/punch-search-widget/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "punch-widget"
 }
